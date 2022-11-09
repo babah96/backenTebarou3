@@ -19,6 +19,7 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('django_rest_allauth.api.urls')),
+    path('', include('users.urls', namespace='users')),
 ]
 
 # CORS_ALLOW_CREDENTIALS = True
