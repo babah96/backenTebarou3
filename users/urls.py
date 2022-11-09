@@ -6,7 +6,7 @@ router.register('user',UserViewset,basename='users')
 
 app_name = 'users'
 urlpatterns = [
-    path('', UserRecordView.as_view(), name='users'),
+    
     path('', UserRecordView.as_view(), name='users'),
 ]
 urlpatterns=urlpatterns+router.urls
