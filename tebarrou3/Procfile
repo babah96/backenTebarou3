@@ -1,1 +1,1 @@
-web gunicorn 3team.wsgi:apllication --log-file -
+web: gunicorn mysite-project.wsgi
