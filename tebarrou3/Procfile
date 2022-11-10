@@ -1,1 +1,2 @@
-web: gunicorn sauvatageproject.wsgi --log-file - 
+ 
+web: gunicorn sauvatageproject.wsgi
