@@ -1,2 +1,2 @@
  
-web: gunicorn sauvatageproject.wsgi
+web: gunicorn tebarrou3.wsgi
