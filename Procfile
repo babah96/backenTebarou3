@@ -1,1 +1,1 @@
-web: gunicorn tebarrou3.wsgi --logo-file-
+web: python manage.py runserver
