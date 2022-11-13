@@ -5,15 +5,12 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-<<<<<<< Updated upstream
     # path('users', include('django_rest_allauth.api.urls')),
     # path('', include('users.urls', namespace='users')),
     path('urgence', include('urgence.urls', namespace='urgence')),
-=======
     path('user/', include('manageusers.urls')),
     path('', include('django_rest_allauth.api.urls')),
     # path('rest-auth/registration/', include('rest_auth.registration.urls')),
->>>>>>> Stashed changes
 ]
 
 # CORS_ALLOW_CREDENTIALS = True
