@@ -4,12 +4,12 @@ from django.urls import path,include
 # from django_rest_allauth.api.views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin', admin.site.urls),
     # path('users', include('django_rest_allauth.api.urls')),
     # path('', include('users.urls', namespace='users')),
     path('urgence', include('urgence.urls', namespace='urgence')),
-    path('user/', include('manageusers.urls')),
-    path('', include('django_rest_allauth.api.urls')),
+    path('manageusers', include('manageusers.urls')),
+    # path('', include('django_rest_allauth.api.urls')),
     # path('rest-auth/registration/', include('rest_auth.registration.urls')),
 ]
 
