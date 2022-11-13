@@ -10,7 +10,7 @@ from django.http import JsonResponse
 #     queryset=Urgence.objects.all()
 #     serializer_class=UrgenceSerializer
 
-viewsets
+# viewsets
 class UrgenceViewset(viewsets.ModelViewSet):
      queryset=Urgence.objects.all()
      serializer_class=UrgenceSerializer
