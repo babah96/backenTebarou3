@@ -8,7 +8,7 @@ urlpatterns = [
     # path('users', include('django_rest_allauth.api.urls')),
     # path('', include('users.urls', namespace='users')),
     path('urgence', include('urgence.urls', namespace='urgence')),
-    path('manageusers', include('manageusers.urls')),
+    path('manageusers/', include('manageusers.urls')),
     # path('', include('django_rest_allauth.api.urls')),
     # path('rest-auth/registration/', include('rest_auth.registration.urls')),
 ]
