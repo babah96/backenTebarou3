@@ -45,8 +45,20 @@ INSTALLED_APPS = [
     'rest_framework', 
     'rest_framework.authtoken', 
     'corsheaders', 
+<<<<<<< Updated upstream
     # 'users'
     'urgence'
+=======
+    'manageusers',
+    'rest_auth',
+    # 'rest_auth.registration'
+    'allauth',
+    'allauth.account',
+    # 'knox',
+    # 'allauth.socialaccount',
+    # Login via Google as an exemple, you can choose facebook, twitter as you like
+    # 'allauth.socialaccount.providers.google',
+>>>>>>> Stashed changes
 ]
 
 MIDDLEWARE = [
@@ -66,11 +78,22 @@ REST_FRAMEWORK = {
 
         'rest_framework.authentication.TokenAuthentication',
     ),
-    'DEFAULT_PERMISSION_CLASSES': (
+    # 'DEFAULT_PERMISSION_CLASSES': (
 
-        'rest_framework.permissions.IsAuthenticated','rest_framework.permissions.AllowAny' 
-    )
+    #     # 'rest_framework.permissions.IsAuthenticated',
+    #     'rest_framework.permissions.IsAdminUser'
+    #     # 'rest_framework.permissions.AllowAny' 
+    # )
 }
+
+# REST_FRAMEWORK = {
+#    'DEFAULT_AUTHENTICATION_CLASSES': (
+#        'rest_framework.authentication.TokenAuthentication',
+#    ),
+#    'DEFAULT_PERMISSION_CLASSES': (
+#         'rest_framework.permissions.IsAuthenticated',
+#    ),
+# }
 
 
 
@@ -164,4 +187,10 @@ django_heroku.settings(locals())
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = 'manageusers.User'
+
+ACCOUNT_EMAIL_REQUIRED = False
+# ACCOUNT_USERNAME_REQUIRED = False
+# ACCOUNT_EMAIL_VERIFICATION = "none"
+# SOCIALACCOUNT_QUERY_EMAIL = True
+# LOGIN_REDIRECT_URL = "/"
