@@ -1,7 +1,5 @@
 ENV/
 ENV
-ENV*
 
 .venv/
 .venv
-.venv*
