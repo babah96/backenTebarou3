@@ -3,7 +3,7 @@ from .import views
 
 from rest_framework.routers import DefaultRouter
 router=DefaultRouter()
-router.register('urgence',views.UrgenceViewset,basename='urgence')
+router.register('',views.UrgenceViewset,basename='urgence')
 # urlpatterns=urlpatterns+router.urls
 app_name='urgence'
 urlpatterns=[
